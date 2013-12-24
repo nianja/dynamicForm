@@ -1,10 +1,10 @@
 dynamicForm
 ===========
 
-Uses a template to create dynamic form elements (requires jQuery)
+Uses aN HTML template to create dynamic form elements (requires jQuery).
 
 
 Usage
 =====
 
-See wiki
+See <http://github.com/nianja/dynamicForm/wiki/Usage>

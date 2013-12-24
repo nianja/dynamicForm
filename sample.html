@@ -19,9 +19,9 @@
                     <option value="locationScotland">Scotland</option>
                 </select>
                 <input type="button" value="&nbsp;-&nbsp;" id="deleteLocation_0" title="Delete this location"
-                       onclick="$(document).dynamicTemplate('remove', '#multipleLocations2', this);" />
+                       onclick="$(document).dynamicForm('remove', '#multipleLocations2', this);" />
                 <input type="button" value="&nbsp;+&nbsp;" id="addLocation_0" title="Add a location"
-                       onclick="$(document).dynamicTemplate('add', '#multipleLocations2', this);" />
+                       onclick="$(document).dynamicForm('add', '#multipleLocations2', this);" />
                 <br />
             </div>
         </div>
@@ -32,8 +32,8 @@
 
         <script type="text/javascript">
             $(document).ready(function() {
-                $(document).dynamicTemplate('set', '#multipleLocations2', '#multipleLocationsTemplate')
-                        .dynamicTemplate('init');
+                $(document).dynamicForm('set', '#multipleLocations2', '#multipleLocationsTemplate')
+                        .dynamicForm('init');
             });
         </script>
 

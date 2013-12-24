@@ -26,8 +26,8 @@
                 minimumElements: "Error: already at minimum number of elements"
             }, options),
             settings = $.extend({
-                debug: true,
-                silent: false,
+                debug: false,
+                silent: true,
                 domElements: 'input, select, label',
                 domElementAttr: ['for', 'id', 'name'],
                 withDataAndEvents: false, /* See jQuery API documentation for description - http://api.jquery.com/clone/ */

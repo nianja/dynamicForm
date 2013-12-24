@@ -26,7 +26,7 @@
         }
     ],
     "bugs": "https://github.com/nianja/dynamicForm/issues",
-    "homepage": "https://github.com/nianja/dynamicForm/",
+    "homepage": "http://nianja.github.io/dynamicForm/",
     "docs": "https://github.com/nianja/dynamicForm/wiki/",
     "download": "https://github.com/nianja/dynamicForm/archive/master.zip",
     "dependencies": {

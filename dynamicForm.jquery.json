@@ -7,7 +7,7 @@
         "dynamic",
         "input"
     ],
-    "version": "0.1",
+    "version": "1.0.0",
     "author": {
         "name": "Ian Ashcroft",
         "url": "https://github.com/nianja/dynamicForm/blob/master/dynamicForm.js"
@@ -21,8 +21,8 @@
     ],
     "licenses": [
         {
-            "type": "",
-            "url": ""
+            "type": "Affero GPL",
+            "url": "https://github.com/nianja/dynamicForm/blob/master/LICENSE"
         }
     ],
     "bugs": "https://github.com/nianja/dynamicForm/issues",

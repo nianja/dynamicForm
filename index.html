@@ -43,8 +43,34 @@
 <h1>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
 
+<div class="hidden">
+    <div id="multipleLocationsTemplate" style="text-align: center; padding:4px 0px 4px 0px;">
+        <label for="startDateMultiLocations_0">From</label>
+        <input type="text" id="startDateMultiLocations_0" title="Start date in new location" onkeyup="" />
+        <label for="multiLocation_0">Location</label>
+        <select id="multiLocation_0" title="Where do you live?" onchange="">
+            <option value="locationEngland" selected="selected">England</option>
+            <option value="locationScotland">Scotland</option>
+        </select>
+        <input type="button" value="&nbsp;-&nbsp;" id="deleteLocation_0" title="Delete this location"
+               onclick="$(document).dynamicTemplate('remove', '#multipleLocations2', this);" />
+        <input type="button" value="&nbsp;+&nbsp;" id="addLocation_0" title="Add a location"
+               onclick="$(document).dynamicTemplate('add', '#multipleLocations2', this);" />
+        <br />
+    </div>
+</div>
+        
+<div id="multipleLocations2" class="hidden input_form"></div>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(document).dynamicTemplate('set', '#multipleLocations2', '#multipleLocationsTemplate')
+                .dynamicTemplate('init');
+    });
+</script>
+
 <p>See <a href="https://github.com/nianja/dynamicForm/wiki/Usage">usage</a> for information on using this plugin.</p>
-<p>See working sample <a href="http://nianja.github.io/dynamicForm/sample.html">here</a>.</p>
       </section>
     </div>
 

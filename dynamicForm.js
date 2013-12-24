@@ -77,7 +77,7 @@
         } else if (action === "init") {
             if (Object.getOwnPropertyNames(register).length > 0) {
                 for (e in register) {
-                    $(document).dynamicTemplate('add', register[e].id);
+                    $(document).dynamicForm('add', register[e].id);
                 }
                 e = 0;
                 if (settings.debug) {

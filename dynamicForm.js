@@ -15,7 +15,7 @@
         e = 0,
         a = 0;
 
-    $.fn.dynamicTemplate = function (action, key, value, options) {
+    $.fn.dynamicForm = function (action, key, value, options) {
 
         var messages = $.extend({
                 notImplemented: "Error: not yet implemented",

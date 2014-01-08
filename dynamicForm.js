@@ -26,6 +26,8 @@
                 minimumElements: "Error: already at minimum number of elements"
             }, options),
             settings = $.extend({
+                placeholderAttr: ['onclick'],
+                placeholder: '_anchor_',
                 debug: false,
                 silent: true,
                 domElements: 'input, select, label',
@@ -103,6 +105,12 @@
                             }
                         }
                         a = 0;
+                        for (a in settings.placeholderAttr) {
+                            if ($(this).attr(settings.placeholderAttr[a])) {
+                                $(this).attr(settings.placeholderAttr[a], $(this).attr(settings.placeholderAttr[a]).replace(settings.placeholder, register[key].id));
+                            }
+                        }
+                        a = 0;
                     }
                 ).parents(register[key].template).appendTo(key);
             } else if ($(value).length > 0) {
@@ -111,6 +119,12 @@
                         for (a in settings.domElementAttr) {
                             if ($(this).attr(settings.domElementAttr[a])) {
                                 $(this).attr(settings.domElementAttr[a], $(this).attr(settings.domElementAttr[a]).replace(/\d+/, register[key].uid));
+                            }
+                        }
+                        a = 0;
+                        for (a in settings.placeholderAttr) {
+                            if ($(this).attr(settings.placeholderAttr[a])) {
+                                $(this).attr(settings.placeholderAttr[a], $(this).attr(settings.placeholderAttr[a]).replace(settings.placeholder, register[key].id));
                             }
                         }
                         a = 0;

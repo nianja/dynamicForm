@@ -38,12 +38,13 @@
         <h1>
 <a name="dynamicform" class="anchor" href="#dynamicform"><span class="octicon octicon-link"></span></a>dynamicForm</h1>
 
-<p>Uses an HTML template to create dynamic form elements (requires jQuery).</p>
+<p>This plugin creates the ability to define a template for a dynamic section of a form, which is then dynamically added to a form any number
+  of times for completion by the user, while ensuring that each field in the template has a unique id.</p>
 
 <div class="hidden">
     <div id="multipleLocationsTemplate" style="text-align: center; padding:4px 0px 4px 0px;">
         <label for="startDateMultiLocations_0">From</label>
-        <input type="text" id="startDateMultiLocations_0" title="Start date in new location" onkeyup="" />
+        <input type="date" id="startDateMultiLocations_0" title="Start date in new location" onkeyup="" />
         <label for="multiLocation_0">Location</label>
         <select id="multiLocation_0" title="Where do you live?" onchange="">
             <option value="locationEngland" selected="selected">England</option>
